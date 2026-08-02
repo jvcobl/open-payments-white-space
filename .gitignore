@@ -1,0 +1,19 @@
+# ── CMS source data: publicly redownloadable, hundreds of MB to 11 GB ──
+# Nothing from CMS belongs in this repository.
+*.csv
+*.parquet
+*.zip
+work/
+nppes/
+partd/
+
+# ── build output ──
+logs/
+
+# ── OS / editor cruft ──
+.DS_Store
+.tmp/
+.claude/
+__pycache__/
+*.pyc
+!figures/data/*.csv
