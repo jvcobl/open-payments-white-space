@@ -113,6 +113,7 @@ Recorded because the corrections are part of the result.
 - An out-of-sample result showing organization degrading predictive accuracy was a null-handling bug. 11,110 held-out physicians received a floor probability because `greatest()` skips NULLs. Corrected, organization adds rather than subtracts.
 - Research payments were absent from the channel classification until the final phase. In the research files, 54,119 physicians appear only in principal-investigator fields against 16,210 as covered recipients. Querying the obvious field alone would have tested a quarter of the population and returned a confidently wrong answer.
 - Volume deciles were assigned with `NTILE(10) OVER (ORDER BY tot_clms)`. That ordering is not unique: 99.2% of MD/DOs share a claim count with at least one other physician and the largest tie group is 5,687. 1,838 physicians (0.26%) changed decile between runs of the identical query, enough to move two reported medians by 0.001. Fixed with a deterministic tiebreaker.
+- Two CSV exports lacked an `ORDER BY`. With parallel execution and `preserve_insertion_order=false`, DuckDB emitted rows in a different order on each run. Values were identical when sorted, but the files differed byte for byte, and one figure redrew its overplotting order. The same class of defect as the `NTILE` tie problem above: an unordered operation over a parallel scan. Fixed by adding explicit ordering.
 
 ---
 
