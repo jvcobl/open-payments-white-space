@@ -104,6 +104,7 @@ COPY (
           ELSE NULL END AS grp FROM k) k
   JOIN crN ON coalesce(k.partd_specialty,'?')=crN.sp AND k.clms_decile=crN.vd
   WHERE grp IS NOT NULL GROUP BY grp
+  ORDER BY state_group
 ) TO 'figures/data/discriminant_states.csv' (HEADER, DELIMITER ',');
 
 -- Per-organization export for figure 1.
@@ -115,4 +116,5 @@ COPY (
   FROM k JOIN crS ON coalesce(k.partd_specialty,'?')=crS.sp AND k.clms_decile=crS.vd
                  AND coalesce(k.partd_state,'?')=crS.st
   WHERE k.org_primary IS NOT NULL GROUP BY k.org_primary HAVING count(*)>=100
+  ORDER BY org_pac_id
 ) TO 'figures/data/discriminant_orgs.csv' (HEADER, DELIMITER ',');
