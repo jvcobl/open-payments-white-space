@@ -1,6 +1,6 @@
 # Phase A — Characterizing the Never-Engaged Population
 
-**Read `CLAUDE_CODE_HANDOFF_v2.md` and `RECON_FINDINGS.md` first. This document assumes both.**
+**Read `README.md` and `RECON_FINDINGS.md` first. This document assumes both.**
 
 Reconnaissance is complete. Parquet files are in `work/`. This is the first analysis phase.
 

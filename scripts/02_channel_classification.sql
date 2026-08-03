@@ -105,7 +105,7 @@ WITH mddo AS (
     -- between runs of the identical query. That is enough to move the
     -- discriminant medians by 0.001 and, in principle, the membership of the
     -- 553. The published findings were computed WITHOUT this tiebreaker; see
-    -- PHASE_P_NOTES.md for the reconciliation.
+    -- notes/PHASE_P_NOTES.md for the reconciliation.
     NTILE(10) OVER (ORDER BY tot_clms, npi) AS clms_decile,
     NTILE(10) OVER (ORDER BY tot_drug_cst/tot_clms, npi) AS cpc_decile,
     CASE WHEN TRY_CAST(partd_ruca AS DOUBLE) IS NULL THEN 'Unknown'

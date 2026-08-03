@@ -90,7 +90,7 @@ check  "Four-cell relationship-only %" "1.25"   "$RELONLY_PCT"
 # these medians by 0.001. This pipeline is now deterministic and returns
 # 1.109 / 0.726 on every run. Substantive conclusions are unaffected: AMC min
 # 0.933 still exceeds Kaiser max 0.791, so the separation remains complete.
-# Full reconciliation in PHASE_P_NOTES.md.
+# Full reconciliation in notes/PHASE_P_NOTES.md.
 checkf "AMC median discriminant"       "1.110"  "$AMC"    "0.002"
 checkf "Kaiser median discriminant"    "0.727"  "$KAISER" "0.002"
 

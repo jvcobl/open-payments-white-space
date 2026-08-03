@@ -17,7 +17,7 @@ five-year footprint is food and beverage and that spread largely collapses.
 The adjusted line is NOT flat in absolute terms: it runs 71.5% at decile 1 down
 to a minimum of 53.2% at decile 8, then rises again through 9 and 10. That is a
 1.34x range, and non-monotonic. It is flat only relative to the baseline's 3.0x.
-The decile-8 dip is diagnosed in PHASE_F_NOTES.md §F4.
+The decile-8 dip is diagnosed in notes/PHASE_F_NOTES.md §F4.
 
 The gap between the two lines is the meal channel. Most of what looks like
 commercially rational targeting by volume is the distribution of who got a
@@ -32,7 +32,7 @@ Detail moved here from the figure caption to keep that caption to three lines:
     relationships at far higher rates; the top deciles are dominated by
     high-volume primary-care prescribers whose whole footprint is meals.
     Standardising on specialty makes the series perfectly monotonic
-    (71.4 -> 56.2). Organisation type is ruled out. See PHASE_F_NOTES.md F4.
+    (71.4 -> 56.2). Organisation type is ruled out. See notes/PHASE_F_NOTES.md F4.
   * Both series are descriptive; neither implies causation.
 """
 import os
@@ -91,7 +91,7 @@ fig.text(0.5, 0.012,
          f"The adjusted line is not flat: it runs {a_max:.1f}% down to {a_min:.1f}% at decile {a_min_dec}, then rises "
          f"again. That is a {a_max/a_min:.2f}× range, and non-monotonic.\n"
          f"That decile-{a_min_dec} turn is specialty composition, not a channel effect. Standardising on specialty makes "
-         "the series monotonic (PHASE_F_NOTES.md §F4).\n"
+         "the series monotonic (notes/PHASE_F_NOTES.md §F4).\n"
          "\"Never engaged\" means no *reported* payment: drug samples and detailing are never reportable under the "
          "Sunshine Act.",
          ha="center", fontsize=8.4, color="#333333")

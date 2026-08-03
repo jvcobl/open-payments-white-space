@@ -39,7 +39,6 @@ whitespace/
 │   ├── PHASE_W_FINDINGS.md
 │   └── PHASE_X_FINDINGS.md
 ├── PHASE_*_TASKS.md              (8 task specs, left at root — see hand-fixes)
-├── CLAUDE_CODE_HANDOFF_v2.md
 ├── work/                         (Parquet — gitignored)
 ├── logs/                         (per-script output — gitignored)
 ├── nppes/  partd/  *.csv         (CMS source data — gitignored)

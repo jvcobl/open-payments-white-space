@@ -38,7 +38,7 @@ Because "engaged" turns out to be an extraordinarily low bar.
 
 Open Payments does not primarily measure financial relationships between physicians and industry. It measures **lunch**.
 
-![Never-engaged rate by prescribing volume, baseline and meal-adjusted](fig3_volume_gradient.png)
+[![Never-engaged rate by prescribing volume, baseline and meal-adjusted](fig3_volume_gradient.png)](fig3_volume_gradient.png)
 
 This has a consequence nobody seems to have followed through. Meals are legally variable in a way that consulting agreements are not. Vermont's 2009 gift ban prohibits most gifts to providers, including food. Minnesota, Maine, Massachusetts and others have restriction or disclosure regimes of varying strength.
 
@@ -67,7 +67,7 @@ Open Payments cannot tell them apart. Both are zeros.
 - **Vermont.** 6.42% of physicians have a professional relationship with no recorded meal, against **0.15%** in Mississippi. Forty-three times as many.
 - **Kaiser.** Non-food reach of 5.6% to 13.5% against a 30.71% national rate, in all eight entities, across seven states including low-restriction Georgia and Hawaii.
 
-![Channel composition by state, PY2021 to PY2025](fig2_state_channel.png)
+[![Channel composition by state, PY2021 to PY2025](fig2_state_channel.png)](fig2_state_channel.png)
 
 One channel is suppressed in Vermont. Both are suppressed at Kaiser.
 
@@ -86,7 +86,7 @@ Scored against that set with no tuning:
 | 18 academic medical centers | **1.110** | 0.932 to 1.360 |
 | 8 Kaiser entities | **0.727** | 0.557 to 0.794 |
 
-![Two-axis channel measure: academic medical centres against Kaiser entities](fig1_discriminant.png)
+[![Two-axis channel measure: academic medical centres against Kaiser entities](fig1_discriminant.png)](fig1_discriminant.png)
 
 **Complete separation. Zero overlap across 26 units.** Robust to removing research payments entirely.
 

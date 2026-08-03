@@ -3,7 +3,7 @@
 # 00_convert_to_parquet.sh
 #
 # PRODUCES : work/*.parquet — every CMS source CSV converted to Parquet
-# SOURCE   : CLAUDE_CODE_HANDOFF_v2.md "TASK ONE"; PHASE_R_FINDINGS.md §Files;
+# SOURCE   : README.md; PHASE_R_FINDINGS.md §Files;
 #            PHASE_W_FINDINGS.md §"Conversion and verification"
 # INPUTS   : the CMS source CSVs in the repository root (see README for URLs).
 #            None are in this repo — they are publicly redownloadable, ~35 GB.
